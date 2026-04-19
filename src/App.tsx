@@ -7,6 +7,9 @@ import MapSection from "./components/MapSection";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import Publications from "./components/Publications";
+import Videos from "./components/Videos";
+import Reviews from "./components/Reviews";
 // import AppointmentForm from "./components/AppointmentForm";
 
 function App() {
@@ -17,6 +20,9 @@ function App() {
         <Hero />
         <About />
         <Services />
+        <Publications />
+        <Videos />
+        <Reviews />
         <WhyUs />
         <MapSection />
         {/* <AppointmentForm /> */}

@@ -2,22 +2,22 @@ const services = [
   {
     title: "Knee Replacement",
     img: "/images/services/kneeInjury.jpg",
-    desc: "Relief from chronic knee pain with advanced joint replacement techniques for better mobility."
+    desc: "Relief from chronic knee pain with advanced joint replacement techniques for better mobility. Total Knee Replacement (TKR), Partial Knee Replacement (PKR), Revision Knee Replacement, and Robot-Assisted Knee Surgery, to alleviate pain and restore mobility."
   },
   {
     title: "Shoulder Injuries",
     img: "/images/services/shoulderInjury.jpg",
-    desc: "Treatment for rotator cuff injuries, dislocations, and frozen shoulder."
+    desc: "Treatment for rotator cuff injuries, dislocations, and frozen shoulder. Ranging from minimally invasive arthroscopy to open joint replacements. Common procedures include rotator cuff repairs, labral repairs (SLAP/Bankart), shoulder replacements (anatomic or reverse), and decompression for impingement."
   },
   {
     title: "Sports Injuries",
     img: "/images/services/sportsInjury.jpg",
-    desc: "Specialized care for ligament tears, sprains, and athletic injuries."
+    desc: "Specialized care for ligament tears, sprains, and athletic injuries. ACL reconstruction, rotator cuff repair, meniscus repairs, and labral tear repairs for both shoulder and hip."
   },
   {
     title: "Arthroscopy",
     img: "/images/services/arthroscopy.jpg",
-    desc: "Minimally invasive procedures for faster recovery and less pain."
+    desc: "Minimally invasive procedures for faster recovery and less pain. ACL reconstruction, rotator cuff repair, meniscus repairs, and labral tear repairs for both shoulder and hip."
   },
 ];
 

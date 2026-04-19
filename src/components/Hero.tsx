@@ -60,7 +60,7 @@ export default function Hero() {
 
               <div className="mt-6 flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://wa.me/919999313898"
+                  href={`https://wa.me/919999313898?text=${encodeURIComponent("Hello Dr. Paarth, I would like to book an appointment.")}`}
                   className="bg-blue-600 px-6 py-3 rounded-lg text-center"
                 >
                   Book Appointment

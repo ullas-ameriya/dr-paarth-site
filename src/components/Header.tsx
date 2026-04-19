@@ -9,7 +9,8 @@ const Header = () => {
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
 
         <h1 className="font-semibold text-lg">
-          Dr. Paarth Narula
+          {/* Dr. Paarth Narula */}
+          <a href="#">Dr. Paarth Narula</a>
         </h1>
 
         {/* Desktop Nav */}
@@ -23,7 +24,7 @@ const Header = () => {
         <div className="flex items-center gap-4">
 
           <a
-            href="https://wa.me/919999313898"
+            href={`https://wa.me/919999313898?text=${encodeURIComponent("Hello Dr. Paarth, I would like to book an appointment.")}`}
             className="hidden sm:block bg-blue-600 text-white px-4 py-2 rounded-lg text-sm"
           >
             Book Appointment
