@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { WHATSAPP } from '../config/constants';
+import { CONTACT_INFO, WHATSAPP } from '../config/constants';
+import CalendlyPopup from "./CalendlyPopup";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -9,10 +10,17 @@ const Header = () => {
     <header className="fixed w-full z-50 bg-white shadow">
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
 
-        <h1 className="font-semibold text-lg">
-          {/* Dr. Paarth Narula */}
-          <a href="#">Dr. Paarth Narula</a>
-        </h1>
+        {/* Left: Logo and Name together */}
+        <div className="flex items-center gap-3">
+          <img 
+            src="/logo.png" 
+            alt="Dr. Paarth Narula" 
+            className="h-10 w-10 md:h-14 md:w-14 object-contain"
+          />
+          <h1 className="font-semibold text-lg">
+            <a href="#">Dr. Paarth Narula</a>
+          </h1>
+        </div>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8 text-sm">
@@ -23,13 +31,21 @@ const Header = () => {
 
         {/* Right side */}
         <div className="flex items-center gap-4">
-
+                  
           <a
             href={WHATSAPP.whatsappUrl}
-            className="hidden sm:block bg-blue-600 text-white px-4 py-2 rounded-lg text-sm"
+            className="hidden md:block bg-green-600 text-white px-6 py-3 rounded-lg"
           >
-            Book Appointment
+            WhatsApp
           </a>
+
+          <a
+            href={CONTACT_INFO.phoneNumber}
+            className="hidden md:block border px-6 py-3 rounded-lg"
+          >
+            Call Now
+          </a>
+          <CalendlyPopup />
 
           {/* Hamburger */}
           <button
@@ -70,11 +86,19 @@ const Header = () => {
           </a>
 
           <a
-            href={`https://wa.me/919999313898?text=${encodeURIComponent("Hello Dr. Paarth, I would like to book an appointment.")}`}
-            className="block bg-blue-600 text-white text-center py-2 rounded"
+            href={WHATSAPP.whatsappUrl}
+            className="block bg-green-600 text-white text-center py-2 rounded"
           >
-            Book Appointment
+            Whats App
           </a>
+
+          <a
+            href={CONTACT_INFO.phoneNumber}
+            className="block border px-6 py-2 rounded text-center"
+          >
+            Call Now
+          </a>
+            <CalendlyPopup />
 
         </div>
       )}

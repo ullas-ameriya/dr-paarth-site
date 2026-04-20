@@ -1,4 +1,5 @@
 import { CONTACT_INFO, WHATSAPP } from '../config/constants';
+import CalendlyPopup from './CalendlyPopup';
 
 const Contact = () => {
   return (
@@ -22,6 +23,7 @@ const Contact = () => {
         >
           Call Now
         </a>
+        <CalendlyPopup />
       </div>
     </section>
   );

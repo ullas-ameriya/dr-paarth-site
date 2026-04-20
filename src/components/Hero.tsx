@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { WHATSAPP } from '../config/constants';
+import { CONTACT_INFO,WHATSAPP } from '../config/constants';
 
 const images = [
   "/images/hero/hero1.jpg",
@@ -72,7 +72,7 @@ export default function Hero() {
                 </a>
 
                 <a
-                  href="tel:+919999313898"
+                  href={CONTACT_INFO.phoneNumber}
                   className="border border-white px-6 py-3 rounded-lg text-center"
                 >
                   Call Now

@@ -1,22 +1,22 @@
 const services = [
   {
     title: "Trauma & Fracture Care",
-    img: "/images/services/kneeInjury.jpg",
+    img: "/images/services/trauma.jpg",
     desc: "Comprehensive treatment for all types of fractures, dislocations, ligament injuries, and accident-related trauma. Management includes emergency care, plaster cast, slab application, fracture reduction, and advanced surgical fixation using plates, screws, nails, or minimally invasive techniques for faster recovery and better alignment."
   },
   {
     title: "Sports Medicine & Arthroscopic Surgery",
-    img: "/images/services/shoulderInjury.jpg",
+    img: "/images/services/sportsInjury.jpg",
     desc: "Specialized treatment for sports injuries, ligament tears, meniscus injuries, cartilage damage, shoulder instability, rotator cuff tears, ankle injuries, and overuse conditions. Advanced keyhole (arthroscopic) surgery for knee, shoulder, ankle and wrist disorders with faster rehabilitation, less pain, and early return to activity."
   },
   {
     title: "Joint Preservation & Joint Replacement",
-    img: "/images/services/sportsInjury.jpg",
+    img: "/images/services/kneeInjury.jpg",
     desc: "Focus on preserving natural joints whenever possible through advanced procedures such as High Tibial Osteotomy (HTO), cartilage restoration, and corrective surgeries. When required, expert joint replacement surgery for hip, knee, and shoulder arthritis to relieve pain, restore movement, and improve quality of life."
   },
   {
     title: "Spine and Back Pain Care",
-    img: "/images/services/arthroscopy.jpg",
+    img: "/images/services/spine.jpg",
     desc: "Comprehensive care for spine-related conditions including back pain, neck pain, slip disc (PIVD), sciatica, cervical/lumbar spondylosis, and spinal infections including tubercular spine. Personalized treatment focused on pain relief, recovery, and improved function."
   },
 ];
