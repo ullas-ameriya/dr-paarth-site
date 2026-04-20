@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { WHATSAPP } from '../config/constants';
 
 const images = [
   "/images/hero/hero1.jpg",
@@ -50,17 +51,21 @@ export default function Hero() {
               transition={{ duration: 0.8 }}
               className="max-w-xl"
             >
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                Advanced Orthopaedic Care
+              <h1 className="text-5xl md:text-6xl font-bold leading-tigh text-center">
+                Narula Ortho
               </h1>
 
-              <p className="mt-4 text-lg text-gray-200">
+              <h1 className="mt-4 text-3xl md:text-5xl font-bold leading-tight text-center">
+                & Physio Centre
+              </h1>
+
+              <p className="mt-6 text-lg text-gray-200 text-center">
                 Knee • Shoulder • Sports Injuries • Arthroscopy
               </p>
 
-              <div className="mt-6 flex flex-col sm:flex-row gap-4">
+              <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href={`https://wa.me/919999313898?text=${encodeURIComponent("Hello Dr. Paarth, I would like to book an appointment.")}`}
+                  href={WHATSAPP.whatsappUrl}
                   className="bg-blue-600 px-6 py-3 rounded-lg text-center"
                 >
                   Book Appointment
@@ -80,7 +85,7 @@ export default function Hero() {
       </div>
 
       {/* Bottom Gradient Fade (premium touch) */}
-      <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-white to-transparent" />
+      <div className="absolute bottom-0 w-full h-32 bg-linear-to-t from-white to-transparent" />
 
     </section>
   );

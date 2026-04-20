@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { WHATSAPP } from '../config/constants';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -24,7 +25,7 @@ const Header = () => {
         <div className="flex items-center gap-4">
 
           <a
-            href={`https://wa.me/919999313898?text=${encodeURIComponent("Hello Dr. Paarth, I would like to book an appointment.")}`}
+            href={WHATSAPP.whatsappUrl}
             className="hidden sm:block bg-blue-600 text-white px-4 py-2 rounded-lg text-sm"
           >
             Book Appointment
@@ -69,7 +70,7 @@ const Header = () => {
           </a>
 
           <a
-            href="https://wa.me/919999313898"
+            href={`https://wa.me/919999313898?text=${encodeURIComponent("Hello Dr. Paarth, I would like to book an appointment.")}`}
             className="block bg-blue-600 text-white text-center py-2 rounded"
           >
             Book Appointment

@@ -1,3 +1,5 @@
+import { CONTACT_INFO } from '../config/constants';
+
 const MapSection = () => {
   return (
     <section className="py-16">
@@ -5,8 +7,8 @@ const MapSection = () => {
         <h2 className="text-3xl font-bold mb-6 text-center">Clinic Location</h2>
 
         <iframe
-          src="https://www.google.com/maps?q=Shivani+Nursing+Home+Shahdara+Delhi&output=embed"
-          className="w-full h-[400px] rounded-xl border"
+          src={CONTACT_INFO.googleMapsEmbedUrl}
+          className="w-full h-100 rounded-xl border"
           loading="lazy"
         ></iframe>
       </div>

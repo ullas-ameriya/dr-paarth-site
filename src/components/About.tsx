@@ -4,6 +4,11 @@ const images = [
   "/images/about/1.jpg",
   "/images/about/2.jpg",
   "/images/about/3.jpg",
+  "/images/about/4.jpg",
+  "/images/about/5.jpg",
+  "/images/about/6.jpg",
+  "/images/about/7.jpg",
+  "/images/about/8.jpg",
 ];
 
 const About = () => {
@@ -39,17 +44,14 @@ const About = () => {
           About Dr. Paarth Narula
         </h2>
 
-        <p className="text-gray-600 leading-relaxed">
-          Dr. Paarth Narula is an orthopaedic surgeon specializing in knee,
-          shoulder, and sports injuries. Trained at Maulana Azad Medical College
-          and Safdarjung Hospital, he has handled a wide range of complex cases
-          in high-volume clinical environments.
+        <p className="text-gray-600 leading-relaxed text-justify">
+          Dr. Paarth Narula is an Orthopaedic Surgeon with special expertise in Sports Medicine, Trauma Surgery, and Joint Replacement.
         </p>
 
-        <p className="mt-4 text-gray-600 leading-relaxed">
-          With international fellowships across Singapore and Australia, he
-          brings global best practices to patient care, focusing on precision,
-          faster recovery, and long-term outcomes.
+        <p className="mt-4 text-gray-600 leading-relaxed text-justify">
+          Trained at Maulana Azad Medical College and Safdarjung Hospital, with further sports medicine training in Ahmedabad, Australia, 
+          and clinical exposure at Singapore General Hospital, he provides comprehensive care for fractures, ligament injuries, arthritis, 
+          and joint disorders with a focus on restoring mobility and performance.
         </p>
       </div>
 

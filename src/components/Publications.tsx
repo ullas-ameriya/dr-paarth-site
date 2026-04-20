@@ -1,15 +1,21 @@
 const publications = [
   {
-    title: "Comparison of clinical and radiological evaluation of dynamic hip screw va proximal femoral nail A2 in Intertrochanteric fracture.",
-    journal: "DY Patil Medical College",
-    year: "2022",
-    link: "https://medical.dpu.edu.in/Orthopaedics-dissertation.aspx",
+    title: "Evaluation of Chat GPT responses for back pain management.",
+    journal: "European Journal of Orthopaedic Trauma and surgery",
+    year: "2024",
+    link: "https://pubmed.ncbi.nlm.nih.gov/38407621/",
   },
   {
-    title: "Efficacy of stereotactic aspiration in deep-seated and eloquent-region intracranial pyogenic abscesses",
-    journal: "PubMed",
-    year: "2008",
-    link: "#",
+    title: "Anterior shoulder instability with engaging Hill Sachs lesion treated with isolated bankart repair vs. bankart repair and remplissage technique",
+    journal: "J ORTHOP TRAUMA SURG REL RES16(9)",
+    year: "2021",
+    link: "https://www.jotsrr.org/articles/anterior-shoulder-instability-with-engaging-hill-sachs-lesion-treated-with-isolated-bankart-repair-vs-bankart-repair-and.pdf",
+  },
+  {
+    title: "To compare the clinical and radiological outcome of unstable intertrochanteric fracture patients treated with Dynamic Hip screw vs proximal femoral nail A2",
+    journal: "J ORTHOP TRAUMA SURG REL RES 16(12)",
+    year: "2021",
+    link: "https://www.jotsrr.org/articles/comparison-of-clinical-and-radiological-outcome-of-patients-with-unstable-intertrochanteric-fracture-treated-with-pfn-a2.pdf",
   },
 ];
 

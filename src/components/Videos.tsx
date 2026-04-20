@@ -1,8 +1,24 @@
 const videos = [
-  "https://www.youtube.com/embed/4YN1xPJ2xTE",
-  "https://www.youtube.com/embed/oKY-4rwnd4s",
-  "https://www.youtube.com/embed/r3XUyArWeCU"
+  {
+    title: "Right way to massage new born",
+    url: "https://youtube.com/embed/4YN1xPJ2xTE",
+  },
+  {
+    title: "Plantar Fasciitis",
+    url: "https://youtube.com/embed/nnRgFLgPq5I",
+  },
+  {
+    title: "Hot pack vs cold pack",
+    url: "https://www.youtube.com/embed/oKY-4rwnd4s",
+  },
 ];
+
+
+// const videos = [
+//   "https://youtube.com/embed/4YN1xPJ2xTE",
+//   "https://youtube.com/embed/nnRgFLgPq5I",
+//   "https://www.youtube.com/embed/oKY-4rwnd4s"
+// ];
 
 const Videos = () => {
   return (
@@ -17,10 +33,11 @@ const Videos = () => {
           {videos.map((v, i) => (
             <div key={i} className="aspect-video">
               <iframe
-                src={v}
+                src={v.url}
                 className="w-full h-full rounded-xl"
                 allowFullScreen
               ></iframe>
+              <h4 className="text-xl font-bold text-center mt-4">{v.title}</h4>
             </div>
           ))}
         </div>

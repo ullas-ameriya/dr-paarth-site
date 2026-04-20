@@ -1,4 +1,5 @@
 import { MessageCircle }  from "lucide-react";
+import { CONTACT_INFO, WHATSAPP } from '../config/constants';
 
 const Footer = () => {
   return (
@@ -10,8 +11,8 @@ const Footer = () => {
           <h3 className="text-xl font-semibold mb-4">
             Dr. Paarth Narula
           </h3>
-          <p className="text-gray-400 text-sm">
-            Orthopaedic Surgeon specializing in knee, shoulder, and sports injuries.
+          <p className="text-gray-400 text-sm text-justify">
+            Dr. Paarth Narula is an Orthopaedic Surgeon with special expertise in Sports Medicine, Trauma Surgery, and Joint Replacement.
           </p>
         </div>
 
@@ -55,7 +56,7 @@ const Footer = () => {
               </a>
 
             <a
-              href="https://wa.me/919999313898"
+              href={WHATSAPP.whatsappUrl}
               target="_blank"
               className="hover:text-green-400"
             >
@@ -65,7 +66,7 @@ const Footer = () => {
           </div>
 
           <p className="text-gray-400 text-sm mt-4">
-            +91 99993 13898
+            {CONTACT_INFO.phoneNumber.replace(/(\d{2})(\d{5})(\d{5})/, '+$1 $2 $3')}
           </p>
         </div>
       </div>

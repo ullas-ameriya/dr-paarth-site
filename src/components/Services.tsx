@@ -1,23 +1,23 @@
 const services = [
   {
-    title: "Knee Replacement",
+    title: "Trauma & Fracture Care",
     img: "/images/services/kneeInjury.jpg",
-    desc: "Relief from chronic knee pain with advanced joint replacement techniques for better mobility. Total Knee Replacement (TKR), Partial Knee Replacement (PKR), Revision Knee Replacement, and Robot-Assisted Knee Surgery, to alleviate pain and restore mobility."
+    desc: "Comprehensive treatment for all types of fractures, dislocations, ligament injuries, and accident-related trauma. Management includes emergency care, plaster cast, slab application, fracture reduction, and advanced surgical fixation using plates, screws, nails, or minimally invasive techniques for faster recovery and better alignment."
   },
   {
-    title: "Shoulder Injuries",
+    title: "Sports Medicine & Arthroscopic Surgery",
     img: "/images/services/shoulderInjury.jpg",
-    desc: "Treatment for rotator cuff injuries, dislocations, and frozen shoulder. Ranging from minimally invasive arthroscopy to open joint replacements. Common procedures include rotator cuff repairs, labral repairs (SLAP/Bankart), shoulder replacements (anatomic or reverse), and decompression for impingement."
+    desc: "Specialized treatment for sports injuries, ligament tears, meniscus injuries, cartilage damage, shoulder instability, rotator cuff tears, ankle injuries, and overuse conditions. Advanced keyhole (arthroscopic) surgery for knee, shoulder, ankle and wrist disorders with faster rehabilitation, less pain, and early return to activity."
   },
   {
-    title: "Sports Injuries",
+    title: "Joint Preservation & Joint Replacement",
     img: "/images/services/sportsInjury.jpg",
-    desc: "Specialized care for ligament tears, sprains, and athletic injuries. ACL reconstruction, rotator cuff repair, meniscus repairs, and labral tear repairs for both shoulder and hip."
+    desc: "Focus on preserving natural joints whenever possible through advanced procedures such as High Tibial Osteotomy (HTO), cartilage restoration, and corrective surgeries. When required, expert joint replacement surgery for hip, knee, and shoulder arthritis to relieve pain, restore movement, and improve quality of life."
   },
   {
-    title: "Arthroscopy",
+    title: "Spine and Back Pain Care",
     img: "/images/services/arthroscopy.jpg",
-    desc: "Minimally invasive procedures for faster recovery and less pain. ACL reconstruction, rotator cuff repair, meniscus repairs, and labral tear repairs for both shoulder and hip."
+    desc: "Comprehensive care for spine-related conditions including back pain, neck pain, slip disc (PIVD), sciatica, cervical/lumbar spondylosis, and spinal infections including tubercular spine. Personalized treatment focused on pain relief, recovery, and improved function."
   },
 ];
 
@@ -43,7 +43,7 @@ const Services = () => {
               
               <div className="p-6">
                 <h3 className="text-xl font-semibold">{s.title}</h3>
-                <p className="mt-2 text-gray-600">{s.desc}</p>
+                <p className="mt-2 text-gray-600 text-justify">{s.desc}</p>
               </div>
 
             </div>
