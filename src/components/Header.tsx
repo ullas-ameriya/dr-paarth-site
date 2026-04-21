@@ -23,7 +23,7 @@ const Header = () => {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-8 text-sm">
+        <nav className="hidden lg:flex gap-8 text-md">
           <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#contact">Contact</a>
@@ -34,22 +34,25 @@ const Header = () => {
                   
           <a
             href={WHATSAPP.whatsappUrl}
-            className="hidden md:block bg-green-600 text-white px-6 py-3 rounded-lg"
+            className="hidden lg:block bg-green-600 text-white px-6 py-3 rounded-lg"
           >
             WhatsApp
           </a>
 
           <a
-            href={CONTACT_INFO.phoneNumber}
-            className="hidden md:block border px-6 py-3 rounded-lg"
+            href={`tel:+${CONTACT_INFO.phoneNumber}`}
+            className="hidden lg:block border px-6 py-3 rounded-lg"
           >
             Call Now
           </a>
-          <CalendlyPopup />
+          <div
+            className="hidden lg:block">          
+            <CalendlyPopup />
+          </div>
 
           {/* Hamburger */}
           <button
-            className="md:hidden"
+            className="lg:hidden"
             onClick={() => setOpen(!open)}
           >
             {open ? <X /> : <Menu />}
@@ -59,7 +62,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-white border-t px-6 py-4 shadow flex flex-col gap-4">
+        <div className="lg:hidden bg-white border-t px-6 py-4 shadow flex flex-col gap-4">
 
           <a
             href="#about"
@@ -87,13 +90,13 @@ const Header = () => {
 
           <a
             href={WHATSAPP.whatsappUrl}
-            className="block bg-green-600 text-white text-center py-2 rounded"
+            className="lg:block bg-green-600 text-white text-center py-2 rounded"
           >
             Whats App
           </a>
 
           <a
-            href={CONTACT_INFO.phoneNumber}
+            href={`tel:+${CONTACT_INFO.phoneNumber}`}
             className="block border px-6 py-2 rounded text-center"
           >
             Call Now

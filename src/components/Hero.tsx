@@ -66,13 +66,13 @@ export default function Hero() {
               <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href={WHATSAPP.whatsappUrl}
-                  className="bg-blue-600 px-6 py-3 rounded-lg text-center"
+                  className="bg-green-600 px-6 py-3 rounded-lg text-center"
                 >
-                  Book Appointment
+                  WhatsApp
                 </a>
 
                 <a
-                  href={CONTACT_INFO.phoneNumber}
+                  href={`tel:+${CONTACT_INFO.phoneNumber}`}
                   className="border border-white px-6 py-3 rounded-lg text-center"
                 >
                   Call Now

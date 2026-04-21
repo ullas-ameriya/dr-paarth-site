@@ -18,7 +18,7 @@ const Contact = () => {
         </a>
 
         <a
-          href={CONTACT_INFO.phoneNumber}
+          href={`tel:+${CONTACT_INFO.phoneNumber}`}
           className="border px-6 py-3 rounded-lg"
         >
           Call Now
